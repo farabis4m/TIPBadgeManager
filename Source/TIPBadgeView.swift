@@ -8,7 +8,7 @@
 
 
 open class TIPBadgeView: UIView {
-    
+    /** Label */
     open var label: UILabel!
     
     var topLabelConstraint:NSLayoutConstraint?
