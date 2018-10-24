@@ -47,14 +47,14 @@ open class TIPBadgeView: UIView {
     }
     
     func addLabelConstraints(){
-        topLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.label!, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0)
+        topLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.label!, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 0)
         
-        bottomLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.label!, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: 0)
+        bottomLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.label!, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: 0)
         
-        leftLabelConstraint = NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.left, multiplier: 1.0, constant: 2.0)
+        leftLabelConstraint = NSLayoutConstraint(item: self.label, attribute: NSLayoutConstraint.Attribute.left, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.left, multiplier: 1.0, constant: 2.0)
         leftLabelConstraint!.priority = UILayoutPriority(rawValue: 1000.0)
         
-        rightLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.label, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 2.0)
+        rightLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.right, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.label, attribute: NSLayoutConstraint.Attribute.right, multiplier: 1.0, constant: 2.0)
         rightLabelConstraint!.priority = UILayoutPriority(rawValue: 1000.0)
         
         self.addConstraints([topLabelConstraint!, bottomLabelConstraint!, leftLabelConstraint!, rightLabelConstraint!])
